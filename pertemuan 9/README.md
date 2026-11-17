@@ -1,9 +1,9 @@
 # Pertemuan 9
 
-Materi praktikum Bootstrap Grid Responsive dan styling antarmuka.
+Materi praktikum Bootstrap Grid Responsive dan pembuatan halaman web.
 
 ## Contoh 1
 Katalog Produk menggunakan Bootstrap Grid System.
 
 ## Contoh 2
-File JavaScript untuk modal produk dan validasi form, serta CSS branding Selaras Coffee.
+Website Selaras Coffee menggunakan HTML dan CSS.
