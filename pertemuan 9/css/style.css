@@ -9,15 +9,20 @@ header h1 {
     font-weight: 700;
 }
 
+header p {
+    font-size: 1rem;
+}
+
 .card {
     border: 0;
     border-radius: 10px;
     overflow: hidden;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.12) !important;
 }
 
 .card-img-top {
@@ -28,4 +33,26 @@ header h1 {
 
 .card-title {
     font-weight: 600;
+}
+
+.card-text {
+    color: #6c757d;
+}
+
+.btn-primary {
+    border-radius: 6px;
+}
+
+footer {
+    margin-top: 3rem;
+}
+
+@media (max-width: 576px) {
+    header {
+        text-align: center;
+    }
+
+    .card-img-top {
+        height: 180px;
+    }
 }
