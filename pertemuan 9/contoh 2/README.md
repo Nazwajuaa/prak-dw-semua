@@ -1,5 +1,5 @@
 # Contoh 2 – Selaras Coffee
 
-Folder ini berisi stylesheet branding Selaras Coffee dan JavaScript untuk modal produk serta validasi form kontak.
+Folder ini berisi halaman website Selaras Coffee menggunakan HTML dan CSS.
 
-Catatan: file HTML pendamping Contoh 2 tidak ada di antara file yang diunggah, jadi yang dimasukkan adalah file CSS dan JavaScript yang tersedia.
+Buka `index.html` untuk melihat halaman.
