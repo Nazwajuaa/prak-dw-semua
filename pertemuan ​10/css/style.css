@@ -1,0 +1,123 @@
+:root {
+            --cokelat: #5b3828;
+            --cokelat-muda: #8b624b;
+            --krem: #f7f1e9;
+            --putih: #fffdf9;
+        }
+
+        body {
+            background: var(--krem);
+            color: #35251e;
+            font-family: Arial, sans-serif;
+        }
+
+        .brand-navbar {
+            background: var(--cokelat);
+        }
+
+        .navbar-brand {
+            letter-spacing: .4px;
+        }
+
+        .nav-link {
+            color: #f7eee6 !important;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: #e8c9a8 !important;
+        }
+
+        .hero {
+            background: var(--putih);
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .hero-photo {
+            width: 100%;
+            height: 100%;
+            min-height: 300px;
+            object-fit: cover;
+        }
+
+        .section-label {
+            color: var(--cokelat-muda);
+            font-size: .78rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .profile-box {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: #fff;
+            padding: 10px 16px;
+            border-radius: 14px;
+            white-space: nowrap;
+        }
+
+        .profile-box img {
+            width: 48px;
+            height: 48px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .dashboard-card,
+        .menu-card {
+            border: 0;
+            border-radius: 16px;
+            overflow: hidden;
+            background: #fffdf9;
+        }
+
+        .dashboard-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .menu-card img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+        }
+
+        .btn-brand {
+            background: var(--cokelat);
+            color: white;
+            border: 0;
+        }
+
+        .btn-brand:hover {
+            background: var(--cokelat-muda);
+            color: white;
+        }
+
+        .registration-section .card {
+            border-radius: 18px;
+        }
+
+        .brand-footer {
+            background: var(--cokelat);
+            color: white;
+        }
+
+        .alert-warning {
+            background: #f2e2cc;
+            border-color: #e5cfb4;
+            color: #5b3828;
+        }
+
+        @media (max-width: 767px) {
+            .hero-photo {
+                min-height: 220px;
+            }
+
+            .dashboard-card img {
+                height: 180px;
+            }
+        }
