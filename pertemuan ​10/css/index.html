@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selaras Coffee</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark brand-navbar">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#dashboard">
+            Selaras Coffee
+        </a>
+
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarBeranda"
+            aria-controls="navbarBeranda"
+            aria-expanded="false"
+            aria-label="Buka menu">
+
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarBeranda">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#dashboard">Beranda</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu">Menu</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#form">Pemesanan</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main id="dashboard" class="container py-5">
+
+    <!-- HEADER / HERO -->
+    <section class="hero shadow-sm mb-4">
+        <div class="row g-0 align-items-center">
+
+            <div class="col-lg-7 p-4 p-md-5">
+                <span class="section-label">SELAMAT DATANG</span>
+
+                <h1 class="display-6 fw-bold mt-2">
+                    Temukan Rasa, Ciptakan Cerita di Selaras Coffee
+                </h1>
+
+                <p class="text-secondary mb-0">
+                    Selaras Coffee hadir sebagai tempat untuk menikmati kopi
+                    dan berbagai pilihan minuman dengan suasana yang nyaman.
+                    Cocok untuk menemani waktu santai, belajar, maupun
+                    berkumpul bersama teman.
+                </p>
+
+                <a href="#menu" class="btn btn-brand mt-4 px-4">
+                    Lihat Menu
+                </a>
+            </div>
+
+            <div class="col-lg-5">
+                <img class="hero-photo"
+                    src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1200&q=85"
+                    alt="Secangkir kopi di meja kafe">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- DASHBOARD -->
+    <div class="d-flex flex-column flex-md-row
+        justify-content-between align-items-md-center gap-3 mb-4">
+
+        <div>
+            <span class="section-label">DASHBOARD</span>
+
+            <h2 class="h3 fw-bold mb-1">
+                Pilihan untuk Menemani Harimu
+            </h2>
+
+            <p class="text-secondary mb-0">
+                Pilih minuman dan makanan favoritmu.
+            </p>
+        </div>
+
+        <div class="profile-box">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80"
+                alt="Foto ilustrasi pelanggan">
+
+            <div>
+                <strong class="d-block">Pelanggan</strong>
+                <span class="text-secondary">Pengunjung</span>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ALERT -->
+    <div class="alert alert-warning alert-dismissible fade show"
+        role="alert">
+
+        <strong>Info!</strong>
+        Promo spesial tersedia untuk beberapa pilihan menu.
+        Yuk, cek menu favoritmu!
+
+        <button type="button" class="btn-close"
+            data-bs-dismiss="alert" aria-label="Tutup">
+        </button>
+    </div>
+
+    <!-- PILIHAN MENU -->
+    <section class="row g-3 mb-5">
+
+        <div class="col-12">
+            <span class="badge px-3 py-2"
+                style="background:#795548;">
+                Pilihan Menu
+            </span>
+        </div>
+
+        <div class="col-6 col-lg-3">
+            <div class="card dashboard-card h-100 shadow-sm">
+                <div class="card-body">
+                    <p class="fw-semibold mb-2">Kopi</p>
+
+                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=80"
+                        alt="Kopi latte">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 col-lg-3">
+            <div class="card dashboard-card h-100 shadow-sm">
+                <div class="card-body">
+                    <p class="fw-semibold mb-2">Non-Kopi</p>
+
+                    <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=600&q=80"
+                        alt="Minuman non-kopi">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 col-lg-3">
+            <div class="card dashboard-card h-100 shadow-sm">
+                <div class="card-body">
+                    <p class="fw-semibold mb-2">Minuman Segar</p>
+
+                    <img src="https://images.unsplash.com/photo-1513558161293-c0c7f2b9b4a8?auto=format&fit=crop&w=600&q=80"
+                        alt="Minuman segar">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 col-lg-3">
+            <div class="card dashboard-card h-100 shadow-sm">
+                <div class="card-body">
+                    <p class="fw-semibold mb-2">Makanan</p>
+
+                    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80"
+                        alt="Roti dan makanan">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- MENU -->
+    <section id="menu" class="mb-5">
+
+        <div class="mb-4">
+            <span class="section-label">FAVORIT PELANGGAN</span>
+
+            <h2 class="h3 fw-bold">
+                Menu Selaras Coffee
+            </h2>
+
+            <p class="text-secondary">
+                Ada pilihan kopi, minuman tanpa kopi, dan makanan ringan.
+            </p>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- MENU KOPI -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card menu-card h-100 shadow-sm">
+
+                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=900&q=85"
+                        alt="Kopi susu">
+
+                    <div class="card-body">
+                        <h3 class="h5 fw-bold">Menu Kopi</h3>
+
+                        <p class="text-secondary">
+                            Pilihan kopi dengan cita rasa khas,
+                            mulai dari kopi susu hingga espresso.
+                        </p>
+
+                        <button class="btn btn-brand"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalDetail"
+                            data-menu="Kopi">
+                            Detail
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- MENU NON KOPI -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card menu-card h-100 shadow-sm">
+
+                    <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=900&q=85"
+                        alt="Minuman cokelat dingin">
+
+                    <div class="card-body">
+                        <h3 class="h5 fw-bold">Menu Non-Kopi</h3>
+
+                        <p class="text-secondary">
+                            Minuman tanpa kopi yang tetap nikmat
+                            dan menyegarkan untuk menemani harimu.
+                        </p>
+
+                        <button class="btn btn-brand"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalDetail"
+                            data-menu="Non-Kopi">
+                            Detail
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- MENU MAKANAN -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card menu-card h-100 shadow-sm">
+
+                    <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=900&q=85"
+                        alt="Pastry dan roti">
+
+                    <div class="card-body">
+                        <h3 class="h5 fw-bold">Menu Makanan</h3>
+
+                        <p class="text-secondary">
+                            Pilihan makanan ringan yang cocok dinikmati
+                            bersama kopi atau minuman favoritmu.
+                        </p>
+
+                        <button class="btn btn-brand"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalDetail"
+                            data-menu="Makanan">
+                            Detail
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FORM PEMESANAN -->
+    <section id="form" class="registration-section">
+
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+
+                <div class="card border-0 shadow">
+                    <div class="card-body p-4 p-md-5">
+
+                        <span class="section-label">PEMESANAN</span>
+
+                        <h2 class="h3 fw-bold">
+                            Pemesanan Menu
+                        </h2>
+
+                        <p class="text-secondary">
+                            Lengkapi form berikut. Field bertanda *
+                            wajib diisi.
+                        </p>
+
+                        <form id="formPemesanan">
+
+                            <div class="mb-3">
+                                <label for="nama" class="form-label">
+                                    Nama Pemesan *
+                                </label>
+
+                                <input type="text"
+                                    class="form-control"
+                                    id="nama"
+                                    name="nama"
+                                    required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label">
+                                    Email *
+                                </label>
+
+                                <input type="email"
+                                    class="form-control"
+                                    id="email"
+                                    name="email"
+                                    placeholder="nama@email.com"
+                                    required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="menu_pesanan"
+                                    class="form-label">
+                                    Pilih Menu *
+                                </label>
+
+                                <select class="form-select"
+                                    id="menu_pesanan"
+                                    name="menu_pesanan"
+                                    required>
+
+                                    <option value="">
+                                        -- Pilih Menu --
+                                    </option>
+
+                                    <option>Kopi</option>
+                                    <option>Non-Kopi</option>
+                                    <option>Minuman Segar</option>
+                                    <option>Makanan</option>
+
+                                </select>
+                            </div>
+
+                            <fieldset class="mb-3">
+
+                                <legend class="form-label">
+                                    Metode Pemesanan *
+                                </legend>
+
+                                <div class="form-check">
+                                    <input class="form-check-input"
+                                        type="radio"
+                                        name="metode_pemesanan"
+                                        id="takeaway"
+                                        value="Take Away"
+                                        required>
+
+                                    <label class="form-check-label"
+                                        for="takeaway">
+                                        Take Away
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input"
+                                        type="radio"
+                                        name="metode_pemesanan"
+                                        id="dinein"
+                                        value="Dine In">
+
+                                    <label class="form-check-label"
+                                        for="dinein">
+                                        Dine In
+                                    </label>
+                                </div>
+
+                            </fieldset>
+
+                            <div class="mb-3">
+                                <label for="catatan"
+                                    class="form-label">
+                                    Catatan Pesanan
+                                </label>
+
+                                <textarea class="form-control"
+                                    id="catatan"
+                                    name="catatan"
+                                    rows="4"
+                                    maxlength="300">
+                                </textarea>
+                            </div>
+
+                            <div class="form-check mb-4">
+                                <input class="form-check-input"
+                                    type="checkbox"
+                                    id="setuju"
+                                    required>
+
+                                <label class="form-check-label"
+                                    for="setuju">
+                                    Saya menyatakan data pemesanan
+                                    sudah benar.
+                                </label>
+                            </div>
+
+                            <button type="submit"
+                                class="btn btn-brand">
+                                Kirim Pesanan
+                            </button>
+
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- MODAL DETAIL -->
+<div class="modal fade" id="modalDetail" tabindex="-1"
+    aria-hidden="true">
+
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h2 class="modal-title fs-5">
+                    Detail Menu
+                </h2>
+
+                <button type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Tutup">
+                </button>
+            </div>
+
+            <div class="modal-body" id="isiDetailMenu">
+                Pilih kategori menu untuk melihat informasinya.
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-secondary"
+                    data-bs-dismiss="modal">
+                    Tutup
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- MODAL KONFIRMASI -->
+<div class="modal fade" id="modalKonfirmasi"
+    tabindex="-1"
+    aria-labelledby="judulKonfirmasi"
+    aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h2 class="modal-title fs-5"
+                    id="judulKonfirmasi">
+                    Konfirmasi Pesanan
+                </h2>
+
+                <button type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Tutup">
+                </button>
+            </div>
+
+            <div class="modal-body" id="ringkasanPesanan">
+                Apakah kamu yakin data pesanan yang dimasukkan
+                sudah benar?
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-secondary"
+                    data-bs-dismiss="modal">
+                    Periksa Kembali
+                </button>
+
+                <button type="button"
+                    class="btn btn-brand"
+                    id="konfirmasiPesanan">
+                    Ya, Pesan
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="brand-footer py-4 mt-5">
+    <div class="container text-center">
+        <p class="mb-0">
+            © 2026 Selaras Coffee. All Rights Reserved.
+        </p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    // DETAIL MENU
+    const detailMenu = {
+        "Kopi": "Tersedia espresso, kopi susu, dan pilihan kopi lainnya untuk menemani aktivitasmu.",
+        "Non-Kopi": "Pilih minuman tanpa kopi seperti cokelat dan minuman creamy lainnya.",
+        "Makanan": "Nikmati pilihan pastry dan makanan ringan sebagai teman minum kopi."
+    };
+
+    const modalDetail = document.getElementById("modalDetail");
+
+    modalDetail.addEventListener("show.bs.modal", function (event) {
+        const kategori = event.relatedTarget.getAttribute("data-menu");
+
+        document.getElementById("isiDetailMenu").textContent =
+            detailMenu[kategori];
+
+        modalDetail.querySelector(".modal-title").textContent =
+            "Detail Menu " + kategori;
+    });
+
+    // FORM PEMESANAN
+    const formPemesanan = document.getElementById("formPemesanan");
+
+    const modalKonfirmasiElement =
+        document.getElementById("modalKonfirmasi");
+
+    const modalKonfirmasi =
+        new bootstrap.Modal(modalKonfirmasiElement);
+
+    formPemesanan.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        if (!formPemesanan.checkValidity()) {
+            formPemesanan.reportValidity();
+            return;
+        }
+
+        const data = new FormData(formPemesanan);
+
+        document.getElementById("ringkasanPesanan").textContent =
+            "Pesanan atas nama " + data.get("nama") +
+            " untuk kategori " + data.get("menu_pesanan") +
+            " (" + data.get("metode_pemesanan") +
+            "). Apakah kamu yakin ingin melanjutkan?";
+
+        modalKonfirmasi.show();
+    });
+
+    // KONFIRMASI PESANAN
+    document.getElementById("konfirmasiPesanan")
+        .addEventListener("click", function () {
+
+            modalKonfirmasi.hide();
+
+            alert(
+                "Pesanan berhasil dikonfirmasi. Terima kasih telah memesan di Selaras Coffee!"
+            );
+
+            formPemesanan.reset();
+        });
+</script>
+
+</body>
+</html>
